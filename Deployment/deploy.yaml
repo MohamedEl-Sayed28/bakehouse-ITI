@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: bakehouse
+  namespace: app
   name: bakehouse
 spec:
   replicas: 1
@@ -15,7 +16,7 @@ spec:
         app: bakehouse
     spec:
       containers:
-      - image: kareemelkasaby/itimansbakehouse:7
+      - image: mohamedmahmoud94/bakehouse:v1
         name: bakehouse
         imagePullPolicy: Always
         ports:
