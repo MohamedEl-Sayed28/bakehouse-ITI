@@ -6,7 +6,7 @@ metadata:
   namespace: app
   name: bakehouse
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: bakehouse
