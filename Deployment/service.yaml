@@ -15,6 +15,6 @@ spec:
     nodePort: 30010
   selector:
     app: bakehouse
-  type: loadbalancer
+  type: LoadBalancer
 status:
   loadBalancer: {}
